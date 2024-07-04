@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Norwester';
+    src: url('https://raw.githubusercontent.com/rcdjasmin/hidilyndiaz/master/norwester.eot'), /* IE9 Compat Modes */
+    url('https://raw.githubusercontent.com/rcdjasmin/hidilyndiaz/master/norwester.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('https://raw.githubusercontent.com/rcdjasmin/hidilyndiaz/master/norwester.woff') format('woff'), /* Pretty Modern Browsers */
+    url('https://raw.githubusercontent.com/rcdjasmin/hidilyndiaz/master/norwester.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('https://raw.githubusercontent.com/rcdjasmin/hidilyndiaz/master/norwester.svg#norwesterregular') format('svg'); /* Legacy iOS */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: auto;
+    height: 100vh;
+    background-color: #ff590048;
+    margin: 0;
+}
+
+header {
+    font-family: 'Norwester';
+    background-color: #113cd6;
+    text-align: center;
+    font-size: 8rem;
+    color: white;
+    text-transform: uppercase;
+    flex-wrap: nowrap;
+    margin: none;
+}
+
+.container{
+    width: 80%;
+    height: 100vh;
+    background-color: #f75700;
+}
+
+.tribute-pic {
+    max-width: 100%;
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.toriyama-description{
+    background-color: #f75700;
+    width: 50%;
+    max-width: 50%;
+    height: 100%;
+    max-height: 50%;
+}
+
+span {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+}
