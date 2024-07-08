@@ -12,11 +12,14 @@
 }
 
 body {
-    display: flex;
+    width: 95%;
+    height: auto;
+    display: block;
     justify-content: center;
     align-items: center;
     background-color:  #FFD7C1;
-    margin: 0;
+    padding: 0;
+    margin: 0 auto;
 }
 
 header {
@@ -30,20 +33,21 @@ header {
 }
 
 p {
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
-.container{
-    width: 80%;
-    max-width: 1200px;
+/* The container for Toriyama's picture/header */
+.container {
+    width: 100%;
     background-color: #F85B1A;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     padding: 50px 0 25px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+/* The link binded to Toriyama's name in the description */
 a:link {
     text-decoration: none;
     color: red;
@@ -66,86 +70,116 @@ a:visited {
     justify-content: center;
 }
 
-.tribute-pic > div {
+#mask {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
 }
 
-#toriyama {
+/* The actual image of Toriyama */
+#image {
     width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 0 auto;
     display: block;
     border-radius: 5px;
 }
 
-legend {
+#img-caption {
     font-family: 'Norwester';
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     padding: 20px 0 0 0;
     color:  #072083;
+    text-align: center;
 }
 
-.toriyama-description{
-    background-color: #f75700;
-    width: 50%;
-    max-width: 50%;
-    height: 100%;
-    max-height: 50%;
-}
-
-span {
+.toriyama-description {
+    background-color: #072083;
     width: 100%;
-    height: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* The container for ONLY the description */
+span#tribute-info {
+    width: 80%;
     display: flex;
-    justify-content: space-between;
-    background-color: #f75700;
     flex-direction: column;
     align-items: center;
+    background-color: #f2b400;
     padding: 40px;
+    margin: 100px auto 0 auto;
+    border-radius: 5px;
 }
 
-#img-div {
-    width: 25%;
-    height: auto;
+#robot-img {
     display: flex;
+    width: 100%;
     flex-direction: row;
     align-items: center;
-    background-color: pink;
+    justify-content: center;
 }
 
-#img-caption {
+#robot-caption {
     display: inline;
-    background-color: #f75700;
+    font-size: 1.2rem;
 }
 
-#img-div > img {
+#robot-img > img {
     display: block;
-    max-width: 100%;
+    width: 25%;
     max-height: auto;
-    background-color: purple;
 }
 
-/* Used to make the header font and profile picture responsive with viewport*/
+.robot-description {
+    font-size: 1.3rem;
+}
+/* Used to make the header font and profile picture responsive with viewport */
 @media (min-width: 992px) {
     header {
         font-size: 8rem;
     }
 
-    .tribute-pic > div {
+    #mask {
         width: 400px;
         height: 400px;
     }
+    
+    .toriyama-description {
+        padding: 0 0 100px 0;
+        width: 100%;
+        height: auto;
+    }
+
+    span#tribute-info {
+        width: 80%;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     header {
         font-size: 6rem;
     }
 
-    .tribute-pic > div {
+    #mask {
         width: 300px;
         height: 300px;
+    }
+
+    .toriyama-description {
+        padding: 0 0 50px 0;
+        width: 100%;
+        height: auto;
+    }
+
+    span#tribute-info {
+        width: 100%;
+    }
+
+    #robot-img > img {
+        display: block;
+        max-width: 60%;
+        max-height: auto;
     }
 }
