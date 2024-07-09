@@ -126,12 +126,6 @@ span#tribute-info {
     font-size: 1.2rem;
 }
 
-#robot-img > img {
-    display: block;
-    width: 25%;
-    max-height: auto;
-}
-
 .robot-description {
     font-size: 1.3rem;
 }
@@ -154,6 +148,13 @@ span#tribute-info {
 
     span#tribute-info {
         width: 80%;
+    }
+
+    #robot-img > img {
+        display: block;
+        width: 400px;
+        max-width: 800px;
+        max-height: auto;
     }
 }
 
@@ -179,7 +180,7 @@ span#tribute-info {
 
     #robot-img > img {
         display: block;
-        max-width: 60%;
+        width: 300px;
         max-height: auto;
     }
 }
